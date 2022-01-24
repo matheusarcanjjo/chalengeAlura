@@ -13,7 +13,7 @@
 	   <section class="form box">
 	      <form action="">
 	        <label for="input-texto">Apenas letras minúsculas, sem acento</label>
-	        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
+	        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui" pattern="[a-z]+$">
 	        <input class="btn" type="submit" value="criptografar!" id="btn-cripto" onclick="criptografar()">
 	        <input class="btn" type="submit" value="descriptografar!" id="btn-descripto" onclick="descriptografar()">
 	      </form>
@@ -21,7 +21,7 @@
 
 	    <section class="msg box">
       <h2 id="">Mensagem criptografada:</h2>
-      <input class="text-input" type="text" id="msg"></input>
+      <input class="text-input" type="text" id="msg" ></input>
       <input class="btn" type="submit" value="copiar" id="btn-copy" onclick="copyText()">
 
     </section>

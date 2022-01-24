@@ -13,7 +13,7 @@ var descriptografarT = document.querySelector('#btn-descripto');
 function criptografar() {
 	form.addEventListener('submit', function(event){
 		event.preventDefault();
-	x = document.getElementById("input-texto").value;
+	x = document.getElementById("input-texto").value.toLowerCase();
 	
 	x = x.split('');
 	var resultado="";
